@@ -1,0 +1,28 @@
+let sentence = prompt("Enter a sentence ending with a point:");
+
+let charCount = 0;
+let wordCount = 1;
+let vowelCount = 0;
+
+let vowels = "aeiouAEIOU";
+
+
+for (let i = 0; i < sentence.length; i++) {
+    let char = sentence[i];
+
+    charCount++;
+
+
+    if (char === " ") {
+        wordCount++;
+    }
+
+  
+    if (vowels.includes(char)) {
+        vowelCount++;
+    }
+}
+
+console.log("Length: " + charCount);
+console.log("Words: " + wordCount);
+console.log("Vowels: " + vowelCount);
